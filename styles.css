@@ -1,0 +1,73 @@
+body {
+  background-color: #0899ed3e;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
+}
+.title {
+  font-size: 3em;
+  text-shadow: 0 0 2px #c500f2da;
+  margin-bottom: 0;
+  background-color: rgba(0, 255, 110, 0.569);
+}
+h2 {
+  margin-bottom: 0;
+}
+img {
+  height: 300px;
+  width: auto;
+}
+ul {
+  list-style-position: inside;
+  list-style-type: none;
+}
+#disclaimer {
+  font-size: 0.85em;
+}
+fieldset {
+  border: 3px dotted #4caf50;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+button[type="submit"] {
+  padding: 15px 30px;
+  font-size: 16px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+body::before {
+  content: " ";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"%3E%3Ccircle cx="50" cy="50" r="2" fill="%23fff" /%3E%3C/svg%3E');
+  animation: stars 50s linear infinite;
+  pointer-events: none;
+  z-index: -1;
+}
+
+@keyframes stars {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 100%;
+  }
+}
+aside {
+  background-color: rgba(24, 216, 75, 0.765);
+  display: inline-block;
+  border-radius: 0.5em;
+}
+footer {
+  text-align: right;
+}
